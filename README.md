@@ -1,3 +1,5 @@
+![Screenshot](screenshot.png)
+
 # ACF inline DateTime Picker Field
 
 Welcome to the Advanced Custom Fields Inline DateTime Picker repository on Github.
