@@ -1,7 +1,7 @@
 <?php
 
 /*
-Plugin Name: _ANDYP - ACF: Inline DateTime Field
+Plugin Name: _ANDYP - ACF - Field : Inline DateTime
 Plugin URI: IORoot.com
 Description: The same default datetime picker but inline instead.
 Version: 1.0.0
