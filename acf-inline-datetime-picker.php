@@ -83,4 +83,8 @@ new andyp_acf_plugin_inline_datetime_picker();
 // class_exists check
 endif;
 	
-?>
+
+//  ┌─────────────────────────────────────────────────────────────────────────┐
+//  │                    Register with ANDYP Plugins                          │
+//  └─────────────────────────────────────────────────────────────────────────┘
+require __DIR__.'/src/acf/andyp_plugin_register.php';
