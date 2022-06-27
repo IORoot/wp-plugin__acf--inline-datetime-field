@@ -1,5 +1,4 @@
 
-
 <div id="top"></div>
 
 <div align="center">
@@ -84,7 +83,8 @@ Two things to know:
 So, step one is to update the `render_field` method in the `acf_field_date_and_time_picker.php` file and class.
 
 Just to keep to the style of the existing code, I inserted a new DIV using the acf methods here:
-```
+
+```php
 $text_input = array(
 			'class' 				=> 'input',
 			'value'					=> $display_value,
@@ -112,7 +112,7 @@ Next, update the `acf-input.js` file to edit the javascript of the picker.
 
 Note that the datetimepicker is an extension of the date picker. So, around line 5811 there will be a definition for the date_picker and it will declare the `$inputText`.
 
-```
+```php
 $inputText: function(){
 			return this.$('.calendar-inline');
 			// return this.$('input[type="text"]');
@@ -122,7 +122,7 @@ This should now return your .calendar-inline class instead of the `<input>` tag.
 
 Lastly, a bit further down, in the date_time_picker section (not date_picker section) there is a declaration to `add.newDateTimePicker` on line 6031. We need to update that to update the calendar with the current time.
 
-```
+```php
 // add
 
 	acf.newDateTimePicker = function( $input, args ){
